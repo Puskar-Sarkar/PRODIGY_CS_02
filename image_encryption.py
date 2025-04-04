@@ -1,5 +1,6 @@
 import os
 from PIL import Image
+
 def encrypt_image(input_image, output_image):
     img = Image.open(input_image)
     pixels = img.load()
@@ -13,6 +14,7 @@ def encrypt_image(input_image, output_image):
             pixels[x, y] = (new_r, new_g, new_b)
     img.save(output_image)
     print(f"Image encrypted and saved to {output_image}")
+
 def decrypt_image(input_image, output_image):
     img = Image.open(input_image)
     pixels = img.load()
@@ -26,6 +28,7 @@ def decrypt_image(input_image, output_image):
             pixels[x, y] = (new_r, new_g, new_b)
     img.save(output_image)
     print(f"Image decrypted and saved to {output_image}")
+    
 if __name__ == "__main__":
     input_image_path = "input_image/input_image.png"
     encrypted_image_path = "encrypted_images/encrypted_image.png"
