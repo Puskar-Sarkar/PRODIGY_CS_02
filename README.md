@@ -1,5 +1,4 @@
-# PRODIGY_CS_02
-# 🔐 Pixel Manipulation for Image Encryption
+# 🛡️ PRODIGY_CS_02 - Pixel Manipulation for Image Encryption
 
 ## 📌 Overview
 This project is a simple image encryption tool that performs **pixel manipulation** to encrypt and decrypt images. It uses basic operations like **XOR transformations** to modify pixel values and protect image data.
